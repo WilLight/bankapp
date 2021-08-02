@@ -3,7 +3,7 @@ using BankApp.Shared.Data;
 
 namespace BankApp.Server.Database
 {
-    public abstract class LiteDbTopUpRepo<DataT> : LiteDbBaseDeletableRepo<DataT> where DataT : ITopUp
+    public abstract class LiteDbTopUpRepo<DataT> : LiteDbBaseDeletableRepo<DataT> where DataT : TopUp
     {
         protected IOptions<LiteDbConfig> configs_;
         public LiteDbTopUpRepo(LiteDbContext liteDbContext, IOptions<LiteDbConfig> configs) : base(liteDbContext, configs.Value.TopUpCollection)

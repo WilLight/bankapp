@@ -1,6 +1,6 @@
 namespace BankApp.Shared.Data
 {
-    public class TopUp : ITopUp
+    public abstract class TopUp : ICountable, IDeletable
     {
         public int Id { get; set; }
         public int TargetAccount { get; set; }
