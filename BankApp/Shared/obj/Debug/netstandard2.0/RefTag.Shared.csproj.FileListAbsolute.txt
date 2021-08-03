@@ -1,8 +1,0 @@
-C:\Coding\.NET\BankApp\Shared\bin\Debug\netstandard2.0\BankApp.Shared.deps.json
-C:\Coding\.NET\BankApp\Shared\bin\Debug\netstandard2.0\BankApp.Shared.dll
-C:\Coding\.NET\BankApp\Shared\bin\Debug\netstandard2.0\BankApp.Shared.pdb
-C:\Coding\.NET\BankApp\Shared\obj\Debug\netstandard2.0\BankApp.Shared.csprojAssemblyReference.cache
-C:\Coding\.NET\BankApp\Shared\obj\Debug\netstandard2.0\BankApp.Shared.AssemblyInfoInputs.cache
-C:\Coding\.NET\BankApp\Shared\obj\Debug\netstandard2.0\BankApp.Shared.AssemblyInfo.cs
-C:\Coding\.NET\BankApp\Shared\obj\Debug\netstandard2.0\BankApp.Shared.dll
-C:\Coding\.NET\BankApp\Shared\obj\Debug\netstandard2.0\BankApp.Shared.pdb

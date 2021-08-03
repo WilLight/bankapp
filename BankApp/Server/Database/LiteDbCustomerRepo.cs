@@ -8,6 +8,9 @@ namespace BankApp.Server.Database
         protected IOptions<LiteDbConfig> configs_;
         LiteDbCustomerRepo(LiteDbContext liteDbContext, IOptions<LiteDbConfig> configs) : base(liteDbContext, configs.Value.CustomerCollection) { }
 
-
+        public Customer GetByUserName(string name)
+        {
+            return liteDb_.GetCollection<Customer>(collection_).FindOne(x => x.Credentials.UserName == name);
+        }
     }
 }
