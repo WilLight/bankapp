@@ -14,16 +14,16 @@ namespace BankApp.Server.Database
         {
             if (dto.Applied == true)
                 return false;
-            var sourceAccount = GetAccount(dto.SourceAccount);
+            var sourceAccount = accountRepo_.GetOne(dto.SourceAccount);
             if (sourceAccount.Balance < dto.Amount)
                 return false;
             sourceAccount.Balance -= dto.Amount;
-            var targetAccount = GetAccount(dto.TargetAccount);
+            var targetAccount = accountRepo_.GetOne(dto.TargetAccount);
             targetAccount.Balance += dto.Amount;
             dto.Applied = true;
             UpdateOne(dto);
-            UpdateAccount(sourceAccount);
-            UpdateAccount(targetAccount);
+            accountRepo_.UpdateOne(sourceAccount);
+            accountRepo_.UpdateOne(targetAccount);
             return true;
         }
     }
